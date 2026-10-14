@@ -62,6 +62,7 @@ except Exception:  # pragma: no cover - 环境无 numba 时优雅降级
         return range(x)
 
 
+@njit(cache=True, fastmath=True, parallel=True)
 def _pgf_sample_numba(p: np.ndarray, w_int: np.ndarray, M: int) -> np.ndarray:
     """Numba 核：在 M 个单位根上累乘 PGF。
 
