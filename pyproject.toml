@@ -1,0 +1,13 @@
+[project]
+name = "wpb"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Matthew", email = "16797475+Minqiulee@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numba>=0.68.0",
+    "numpy>=2.5.4",
+]
